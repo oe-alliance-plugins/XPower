@@ -1,5 +1,3 @@
-from __future__ import absolute_import
-from __future__ import print_function
 # for localized messages  	 
 from . import _
 
@@ -19,7 +17,7 @@ from Components.config import config
 
 from enigma import eTimer
 
-import telnetlib
+import telnetlib3 as telnetlib
 import os
 from os import path as os_path
 

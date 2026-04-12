@@ -1,0 +1,24 @@
+{
+  "depends": "",
+  "description": "remote PC power management for Win and linux",
+  "legacy_setup": {
+    "description": "remote PC power management for Win and linux",
+    "has_setup_translate": true,
+    "name": "enigma2-plugin-extensions-xpower",
+    "package_data": [],
+    "package_dir_value": "",
+    "packages": [],
+    "pkg": "Extensions.XPower",
+    "version": "1.59"
+  },
+  "module_dir_name": "XPower",
+  "package_name": "enigma2-plugin-extensions-xpower",
+  "plugin_group": "extensions",
+  "source_repo_branch": "python3",
+  "source_repo_name": "e2openplugin-XPower",
+  "source_repo_url": "https://github.com/E2OpenPlugins/e2openplugin-XPower.git",
+  "target_repo_branch": "main",
+  "target_repo_name": "XPower",
+  "target_repo_url": "git@github.com:oe-alliance-plugins/XPower.git",
+  "version": "1.59"
+}
