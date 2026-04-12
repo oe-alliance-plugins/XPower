@@ -5,7 +5,6 @@ from Components.ActionMap import ActionMap
 from Components.ScrollLabel import ScrollLabel
 from Components.Button import Button
 from Components.Label import Label
-from Components.Pixmap import Pixmap
 
 from . import ui
 

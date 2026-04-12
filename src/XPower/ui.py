@@ -3,13 +3,13 @@ from . import _
 
 from Screens.Screen import Screen
 from Components.Sources.List import List
-from Components.ActionMap import ActionMap, HelpableActionMap
+from Components.ActionMap import HelpableActionMap
 from Screens.HelpMenu import HelpableScreen
 from Components.Pixmap import Pixmap
 from Components.Button import Button
 from Components.Label import Label
 from Tools.LoadPixmap import LoadPixmap
-from Tools.Directories import resolveFilename, SCOPE_PLUGINS, SCOPE_SKIN_IMAGE
+from Tools.Directories import resolveFilename, SCOPE_PLUGINS
 from Screens.ChoiceBox import ChoiceBox
 from Screens.MessageBox import MessageBox
 from Components.Sources.StaticText import StaticText
@@ -21,7 +21,7 @@ import telnetlib3 as telnetlib
 import os
 from os import path as os_path
 
-from .xpowerut import ixpowerUt, xpowerUt
+from .xpowerut import ixpowerUt
 from .xpoweredit import xpowerEdit
 from .xpowerhlp import xpowerHelp
 
@@ -314,15 +314,13 @@ class xpower(Screen, HelpableScreen):
 		self.sendCommand()
 
 	def sendCommand(self):
-		if self.xpnet():
-			if self.isAlive():
-				self.session.openWithCallback(self.exitPlugin, MessageBox, _("Please wait, \"%s\" is sended to computer %s") % (self.command, self.pcinfo['name']), type=MessageBox.TYPE_INFO, timeout=3)
-				self.commandTimer.start(100, True)
+		if self.xpnet() and self.isAlive():
+			self.session.openWithCallback(self.exitPlugin, MessageBox, _("Please wait, \"%s\" is sended to computer %s") % (self.command, self.pcinfo['name']), type=MessageBox.TYPE_INFO, timeout=3)
+			self.commandTimer.start(100, True)
 
 	def exitPlugin(self, data):
-		if data is not None and data:
-			if config.plugins.xpower.close.value:
-				self.close()
+		if data is not None and data and config.plugins.xpower.close.value:
+			self.close()
 
 	def sendDelayed(self):
 		self.commandTimer.stop()
@@ -344,13 +342,13 @@ class xpower(Screen, HelpableScreen):
 		oldIndex = self["config"].getIndex()
 		oldCount = self["config"].count()
 
-		list = []
+		items = []
 		remotepc, remotepc_order = ixpowerUt.getPCsList()
 		for name in remotepc_order:
-			list.append(self.buildPCViewItem(remotepc[name]))
+			items.append(self.buildPCViewItem(remotepc[name]))
 		if config.plugins.xpower.sort.value:
-			list.sort(key=lambda x: x[1])
-		self["config"].setList(list)
+			items.sort(key=lambda x: x[1])
+		self["config"].setList(items)
 
 		newCount = self["config"].count()
 		newIndex = self["config"].getIndex()
@@ -358,7 +356,7 @@ class xpower(Screen, HelpableScreen):
 		self.setListIndex(oldIndex, newIndex, oldCount, newCount)
 
 	def setListIndex(self, oldIndex, newIndex, oldCount, newCount):
-		if newIndex != None:
+		if newIndex is not None:
 			if oldIndex + 1 == oldCount:  # last record
 				if oldCount < newCount:  # added
 					self["config"].setIndex(oldIndex + 1)
@@ -570,7 +568,7 @@ class xpower(Screen, HelpableScreen):
 					telnet.read_until(b'assword', 5)
 					telnet.write((passwd + '\r').encode('utf-8'))
 				except EOFError as e:
-					"[xpower plugin] Error telnet:", e
+					print("[xpower plugin] Error telnet:", e)
 				self.closeLinTelnet(telnet)
 			else:
 				try:
@@ -588,7 +586,7 @@ class xpower(Screen, HelpableScreen):
 					telnet.write(('exit\r\n').encode('utf-8'))
 					telnet.read_until(b'', 1)
 				except EOFError as e:
-					"[xpower plugin] Error telnet:", e
+					print("[xpower plugin] Error telnet:", e)
 
 				self.closeLinTelnet(telnet)
 
@@ -610,12 +608,12 @@ class xpower(Screen, HelpableScreen):
 		i = 0
 		while self.alive():
 			try:
-				tmp = telnet.read_until(b'xyz', 1)
-			except EOFError as e:
+				tmp = telnet.read_until(b'xyz', 1)  # noqa F841
+			except EOFError:
 				#self.message(_("Connection finished... %s" % (e)),3)
 				close = False
 				break
-			except Exception as e:
+			except Exception:
 				#self.message(_("Finished... %s" % (e)),4)
 				break
 			if self.command == "abort":

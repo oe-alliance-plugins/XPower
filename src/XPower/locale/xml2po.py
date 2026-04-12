@@ -21,7 +21,7 @@ class parseXML(ContentHandler, LexicalHandler):
 		self.isPointsElement, self.isReboundsElement = 0, 0
 		self.attrlist = attrlist
 		self.last_comment = None
-		self.ishex = re.compile('#[0-9a-fA-F]+\Z')
+		self.ishex = re.compile(r'#[0-9a-fA-F]+\Z')
 
 	def comment(self, comment):
 		if comment.find("TRANSLATORS:") != -1:
@@ -64,8 +64,8 @@ for arg in sys.argv[1:]:
 		k = string.replace(k, '\"', '\\"')
 		k = string.replace(k, '\n', '\x5c\x6e')  # put newline to .po string
 		if c:
-			for l in c.split('\n'):
-				print("#. ", l)
+			for ll in c.split('\n'):
+				print("#. ", ll)
 		print('msgid "' + str(k) + '"')
 		print('msgstr ""')
 

@@ -1,18 +1,17 @@
 from . import _
 
 import os
-import enigma
 from Components.config import config, getConfigListEntry, ConfigSubsection, ConfigYesNo, ConfigSelection, NoSave, ConfigIP, ConfigPassword, ConfigText
 from Screens.MessageBox import MessageBox
 from Screens.Screen import Screen
 from Components.ConfigList import ConfigListScreen
-from Components.ActionMap import ActionMap, HelpableActionMap
+from Components.ActionMap import HelpableActionMap
 from Screens.HelpMenu import HelpableScreen
 from Components.Button import Button
 from Components.Label import Label
-from Components.Pixmap import Pixmap, MultiPixmap
+from Components.Pixmap import MultiPixmap
 
-from .xpowerut import ixpowerUt, xpowerUt
+from .xpowerut import ixpowerUt
 
 # Configuration
 config.plugins.xpower = ConfigSubsection()
@@ -229,7 +228,7 @@ class xpowerEdit(Screen, ConfigListScreen, HelpableScreen):
 			self.session.openWithCallback(self.applyConfig, MessageBox, (_("Are you sure you want to add this PC?\n")))
 
 	def updateConfig(self, ret=False):  # update record
-		if (ret == True):
+		if ret is True:
 			ixpowerUt.setRemotePCAttribute(cfg.name.value, "name", cfg.name.value)
 			ixpowerUt.setRemotePCAttribute(cfg.name.value, "ip", cfg.ip.getText())
 			ixpowerUt.setRemotePCAttribute(cfg.name.value, "mac", cfg.mac.value)
@@ -251,7 +250,7 @@ class xpowerEdit(Screen, ConfigListScreen, HelpableScreen):
 			self.close()
 
 	def applyConfig(self, ret=False):  # new record
-		if (ret == True):
+		if ret is True:
 			data = {'name': False, 'ip': False, 'mac': False, 'system': False, 'username': False, 'password': False, 'bqdn': False}
 			data['name'] = cfg.name.value
 			data['ip'] = cfg.ip.getText()

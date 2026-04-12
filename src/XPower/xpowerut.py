@@ -1,8 +1,4 @@
 from Screens.Screen import Screen
-from Components.ConfigList import ConfigListScreen
-from Components.Button import Button
-from Components.Label import Label
-import os
 from os import path as os_path
 
 from xml.etree.cElementTree import parse as cet_parse
@@ -31,7 +27,7 @@ class xpowerUt(Screen):
 		tree = cet_parse(XML_PCTAB).getroot()
 
 		def getValue(definitions, default):
-			ret = ""
+			# ret = ""
 			# How many definitions are present
 			Len = len(definitions)
 			return Len > 0 and definitions[Len - 1].text or default
