@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xpower Persian Translation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-30 09:25+0100\n"
+"POT-Creation-Date: 2026-04-12 21:03+0200\n"
 "PO-Revision-Date: \n"
 "Last-Translator: mehdi <mehdi_ar_yekta@yahoo.com>\n"
 "Language-Team: Persian Professionals <persianpros@yahoo.com>\n"
@@ -13,55 +13,55 @@ msgstr ""
 "X-Poedit-Language: Persian\n"
 "X-Poedit-Country: IRAN, ISLAMIC REPUBLIC OF\n"
 
-#: ../ui.py:232
+#: ../ui.py:238
 msgid " - select action:"
 msgstr "- انتخاب یک اقدام : "
 
-#: ../xpowerhlp.py:111
+#: ../xpowerhlp.py:109
 msgid "- enable the Telnet Server"
 msgstr "فعال سازی سرور تلنت :"
 
-#: ../xpowerhlp.py:113
+#: ../xpowerhlp.py:111
 msgid "- for Win8 enable ping (Firewall-Adwanced settings-Inbound Rules ... File and Printer Sharing (Echo Request - ICMPv4/6-In) to Yes"
 msgstr ""
 
-#: ../xpowerhlp.py:109
+#: ../xpowerhlp.py:107
 #, fuzzy
 msgid "- install pm-utils with:"
 msgstr "نصب تلنت با استفاده  : "
 
-#: ../xpowerhlp.py:108
+#: ../xpowerhlp.py:106
 msgid "- install telnetd with:"
 msgstr "نصب تلنت با استفاده  : "
 
-#: ../xpowerhlp.py:118
+#: ../xpowerhlp.py:116
 msgid "- must be installed actual compiled \"net\" command. Problem is, that size of this file is over 8MB and some box have not enought memory for it"
 msgstr ""
 
-#: ../xpowerhlp.py:115
+#: ../xpowerhlp.py:113
 msgid "- set Telnet in Services to Automatic and run it"
 msgstr "تنظیم کردن سرور تلنت در تمامی سرویس به مد خودکاربه منظور راه اندازی آن"
 
-#: ../xpowerhlp.py:112
+#: ../xpowerhlp.py:110
 msgid "- set Telnet server service to Automatic and run it"
 msgstr "تنظیم کردن سرور تلنت در یک سرویس خاص به مد خودکاربه منظور راه اندازی آن"
 
-#: ../xpowerhlp.py:116
+#: ../xpowerhlp.py:114
 msgid "- there in Firewall add tcp port 23 for telnet"
 msgstr "در فایروال نی سی پی پورت 23 را به منظور فعال سازی تلنت اضافه کنید"
 
-#: ../xpowerhlp.py:119
+#: ../xpowerhlp.py:117
 msgid "- this way knows Shutdown, Reboot and Abort only!"
 msgstr "این راه خاموش کردن و راه اندازی مجدد ولغو را می داند"
 
 #
-#: ../xpoweredit.py:224
+#: ../xpoweredit.py:226
 msgid ""
 "A PC entry with this name already exists!\n"
 "Update existing entry and continue?"
 msgstr ""
 
-#: ../xpowerhlp.py:99 ../xpowerhlp.py:132 ../ui.py:144 ../ui.py:171
+#: ../ui.py:144 ../ui.py:171 ../xpowerhlp.py:97 ../xpowerhlp.py:130
 msgid "Abort shutdown / reboot"
 msgstr "لغو خاموش کردن / راه اندازی مجدد سیستم"
 
@@ -73,33 +73,33 @@ msgstr "افزودن / ویرایش کردن"
 msgid "Add/Edit item"
 msgstr "اضافه کردن / ویرایش کردن گزینه"
 
-#: ../xpowerhlp.py:54
+#: ../xpowerhlp.py:52
 msgid "All"
 msgstr ""
 
-#: ../xpoweredit.py:226
+#: ../xpoweredit.py:228
 msgid "Are you sure you want to add this PC?\n"
 msgstr ""
 
-#: ../ui.py:191
+#: ../ui.py:192
 #, python-format
 msgid "BouqDn: %s"
 msgstr ""
 
-#: ../xpoweredit.py:75
+#: ../xpoweredit.py:74
 msgid "BouqDown"
 msgstr ""
 
-#: ../ui.py:255
+#: ../ui.py:261
 #, python-format
 msgid "BouqUp for %s, BouqDn for %s"
 msgstr ""
 
-#: ../xpoweredit.py:84
+#: ../xpoweredit.py:83
 msgid "Cancel"
 msgstr ""
 
-#: ../xpowerhlp.py:53 ../ui.py:120
+#: ../ui.py:120 ../xpowerhlp.py:51
 msgid "Close"
 msgstr ""
 
@@ -107,17 +107,17 @@ msgstr ""
 msgid "Close plugin"
 msgstr "بستن پلاگین"
 
-#: ../xpoweredit.py:76
+#: ../xpoweredit.py:75
 msgid "Closing plugin"
 msgstr "بستن پلاگین"
 
-#: ../ui.py:279
+#: ../ui.py:285
 msgid ""
 "Command \"net\" is not installed\n"
 "option \"XP NET RPC\" does not work..."
 msgstr ""
 
-#: ../ui.py:547
+#: ../ui.py:556
 #, python-format
 msgid "Connection failed... %s"
 msgstr ""
@@ -130,20 +130,20 @@ msgstr ""
 msgid "Delete selected item"
 msgstr "حذف گزینه انتخاب شده"
 
-#: ../ui.py:393
+#: ../ui.py:397
 #, python-format
 msgid "Do You want remove PC: %s?"
 msgstr ""
 
-#: ../xpowerhlp.py:102
+#: ../xpowerhlp.py:100
 msgid "Do not forget, that Suspend and Hibernate are hardware, BIOS and drivers dependents."
 msgstr ""
 
-#: ../xpowerhlp.py:94
+#: ../xpowerhlp.py:92
 msgid "Dont forget, that not all mode must be supported by Your hardware!"
 msgstr "فراموش نکن که قرار نیست تمامی مدها توسط سخت افزار شما پشتیبانی شود "
 
-#: ../xpowerhlp.py:91
+#: ../xpowerhlp.py:89
 msgid "Each operation system using its own comunication and own power managenent. There in settings of each PC item must be set true value."
 msgstr "هر سیستم عاملی از ارتباطات خاص خودش و مدیریت توان خودش استفاده می کند و در هر سیستم کامپیوتری لیستی از تنظیمات وجود دارد که بایستی به درستی تنظیم گردند"
 
@@ -151,7 +151,7 @@ msgstr "هر سیستم عاملی از ارتباطات خاص خودش و مد
 msgid "Enable/disable moving item"
 msgstr ""
 
-#: ../xpoweredit.py:87
+#: ../xpoweredit.py:86
 msgid "Get MAC"
 msgstr ""
 
@@ -159,21 +159,21 @@ msgstr ""
 msgid "Help"
 msgstr "راهنما"
 
-#: ../xpowerhlp.py:101 ../xpowerhlp.py:130 ../ui.py:147 ../ui.py:170
-#: ../ui.py:254
+#: ../ui.py:147 ../ui.py:170 ../ui.py:260 ../xpowerhlp.py:99
+#: ../xpowerhlp.py:128
 msgid "Hibernate"
 msgstr "هایبرنت"
 
-#: ../xpowerhlp.py:56 ../xpowerhlp.py:124
+#: ../xpowerhlp.py:54 ../xpowerhlp.py:122
 msgid "Hotkeys"
 msgstr "کلیدهای میانبر"
 
-#: ../xpoweredit.py:26
+#: ../xpoweredit.py:24
 #, fuzzy
 msgid "Hybernate"
 msgstr "هایبرنت"
 
-#: ../xpoweredit.py:70
+#: ../xpoweredit.py:69
 msgid "IP"
 msgstr ""
 
@@ -181,19 +181,19 @@ msgstr ""
 msgid "IP:"
 msgstr ""
 
-#: ../xpowerhlp.py:93
+#: ../xpowerhlp.py:91
 msgid "If are on PC installed more OS, then create more PC's items. Priority key is name of PC."
 msgstr "اگر در کامپیوتر شما چندین سیستم عامل نصب شده است پس گزینه های بیشتری را در کامپیوتر ایجاد کنید . اولویت ها بر اساس نام کامپیوترها هستند "
 
-#: ../ui.py:199
+#: ../ui.py:201
 msgid "It has not sense change order if is set list sorting..."
 msgstr ""
 
-#: ../xpoweredit.py:23 ../xpowerhlp.py:107
+#: ../xpoweredit.py:21 ../xpowerhlp.py:105
 msgid "Linux"
 msgstr ""
 
-#: ../xpoweredit.py:67
+#: ../xpoweredit.py:66
 msgid "MAC"
 msgstr ""
 
@@ -201,7 +201,7 @@ msgstr ""
 msgid "MAC:"
 msgstr ""
 
-#: ../ui.py:470
+#: ../ui.py:478
 #, python-format
 msgid "Magic packet has been send to PC %s"
 msgstr ""
@@ -214,51 +214,51 @@ msgstr ""
 msgid "Move item up"
 msgstr ""
 
-#: ../xpoweredit.py:69
+#: ../xpoweredit.py:68
 msgid "Name"
 msgstr "نام"
 
-#: ../ui.py:287
+#: ../ui.py:293
 #, python-format
 msgid "No response from %s."
 msgstr ""
 
-#: ../xpowerhlp.py:120
+#: ../xpowerhlp.py:118
 msgid ""
 "Note:\n"
 " telnet is easy way, but it is not safe protocol! Disable telnet port 23 on Your router, if it is possible!"
 msgstr ""
 
-#: ../xpoweredit.py:85
+#: ../xpoweredit.py:84
 msgid "Ok"
 msgstr ""
 
-#: ../xpoweredit.py:20 ../xpowerut.py:21
+#: ../xpoweredit.py:18 ../xpowerut.py:17
 msgid "PC"
 msgstr "کامپیوتر"
 
-#: ../ui.py:401
+#: ../ui.py:405
 msgid "PC has been removed..."
 msgstr "پاک شده است PC"
 
-#: ../xpoweredit.py:74
+#: ../xpoweredit.py:73
 msgid "Password"
 msgstr "رمز ورود"
 
-#: ../ui.py:313
+#: ../ui.py:318
 #, python-format
 msgid "Please wait, \"%s\" is sended to computer %s"
 msgstr ""
 
-#: ../plugin.py:14
+#: ../plugin.py:15
 msgid "Power management for Win/Linux PC's"
 msgstr "مدیریت انرژی و توان برای ویندوز / لینوکس کامپیوتر"
 
-#: ../xpowerhlp.py:99 ../xpowerhlp.py:131 ../ui.py:145 ../ui.py:169
+#: ../ui.py:145 ../ui.py:169 ../xpowerhlp.py:97 ../xpowerhlp.py:129
 msgid "Reboot"
 msgstr "راه اندازی مجدد"
 
-#: ../xpowerhlp.py:133
+#: ../xpowerhlp.py:131
 msgid "Select action"
 msgstr "انتخاب یک اقدام"
 
@@ -266,111 +266,111 @@ msgstr "انتخاب یک اقدام"
 msgid "Select power management"
 msgstr "انتخاب مدیریت انرژی و توان"
 
-#: ../xpowerhlp.py:55 ../xpowerhlp.py:106
+#: ../xpowerhlp.py:53 ../xpowerhlp.py:104
 msgid "Setup"
 msgstr "برپاکردن"
 
-#: ../xpoweredit.py:26 ../xpowerhlp.py:99 ../xpowerhlp.py:129 ../ui.py:142
-#: ../ui.py:168 ../ui.py:245
+#: ../ui.py:142 ../ui.py:168 ../ui.py:251 ../xpoweredit.py:24
+#: ../xpowerhlp.py:97 ../xpowerhlp.py:127
 msgid "Shutdown"
 msgstr "خاموش کردن"
 
-#: ../xpoweredit.py:77
+#: ../xpoweredit.py:76
 msgid "Sort list"
 msgstr ""
 
-#: ../xpoweredit.py:26 ../xpowerhlp.py:101 ../xpowerhlp.py:128 ../ui.py:146
-#: ../ui.py:167 ../ui.py:252
+#: ../ui.py:146 ../ui.py:167 ../ui.py:258 ../xpoweredit.py:24
+#: ../xpowerhlp.py:99 ../xpowerhlp.py:126
 msgid "Suspend"
 msgstr "در وضعیت معلق"
 
-#: ../xpoweredit.py:72
+#: ../xpoweredit.py:71
 msgid "System"
 msgstr ""
 
-#: ../ui.py:468
+#: ../ui.py:476
 msgid "The network interface is not configured!"
 msgstr ""
 
-#: ../xpoweredit.py:73
+#: ../xpoweredit.py:72
 msgid "User"
 msgstr "کاربر"
 
-#: ../xpowerhlp.py:126 ../ui.py:129
+#: ../ui.py:129 ../xpowerhlp.py:124
 msgid "User defined..."
 msgstr "کاربر تعریف شد ..."
 
-#: ../xpowerhlp.py:75
+#: ../xpowerhlp.py:73
 msgid "Version"
 msgstr "نسخه"
 
-#: ../xpowerhlp.py:97 ../xpowerhlp.py:125 ../xpowerhlp.py:127 ../ui.py:143
-#: ../ui.py:166 ../ui.py:255
+#: ../ui.py:143 ../ui.py:166 ../ui.py:261 ../xpowerhlp.py:95
+#: ../xpowerhlp.py:123 ../xpowerhlp.py:125
 msgid "WakeUp"
 msgstr "بیدار شدن"
 
-#: ../xpowerhlp.py:89
+#: ../xpowerhlp.py:87
 msgid "Welcome in plugin XPower for remote power management PC's. This plugin knows sending Magic Packet and control power status of PC."
 msgstr "خوش آمدید به پلاگین ایکس پاور پلاگینی جهت مدیریت از راه دور کامپیوتر / این پلاگین با ارسال بسته های جادویی مدیریت توان کامپیوتر را در دست می گیرد   "
 
-#: ../xpoweredit.py:23
+#: ../xpoweredit.py:21
 msgid "Win7"
 msgstr ""
 
-#: ../xpoweredit.py:23
+#: ../xpoweredit.py:21
 msgid "Win8"
 msgstr ""
 
-#: ../xpowerhlp.py:110
+#: ../xpowerhlp.py:108
 msgid "Windows 7/8"
 msgstr ""
 
-#: ../xpowerhlp.py:114
+#: ../xpowerhlp.py:112
 msgid "Windows XP"
 msgstr ""
 
-#: ../xpowerhlp.py:117
+#: ../xpowerhlp.py:115
 msgid "Windows XP via net rpc"
 msgstr ""
 
-#: ../xpoweredit.py:23
+#: ../xpoweredit.py:21
 msgid "XP"
 msgstr ""
 
-#: ../xpoweredit.py:23
+#: ../xpoweredit.py:21
 msgid "XP NET RPC"
 msgstr ""
 
-#: ../ui.py:115 ../ui.py:229
+#: ../ui.py:115 ../ui.py:235
 #, fuzzy
 msgid "XPower"
 msgstr "XPower راهنما"
 
-#: ../xpowerhlp.py:74
+#: ../xpowerhlp.py:72
 msgid "XPower Help"
 msgstr "XPower راهنما"
 
-#: ../xpoweredit.py:129
+#: ../xpoweredit.py:131
 msgid "XPower PC configuration:"
 msgstr "پیکربندی ایکس پاور کامپیوتر"
 
-#: ../xpowerhlp.py:95
+#: ../xpowerhlp.py:93
 msgid "XPower plugin knows:"
 msgstr "پلاگین ایکس پاور می داند که :"
 
-#: ../xpoweredit.py:106
+#: ../xpoweredit.py:105
 #, fuzzy, python-format
 msgid "XPower: %s"
 msgstr "XPower راهنما"
 
-#: ../xpoweredit.py:238
+#: ../xpoweredit.py:240
 msgid "Your PC has been updated..."
 msgstr "کامپیوتر شما بروزرسانی شده است "
 
-#: ../xpoweredit.py:261
+#: ../xpoweredit.py:263
 msgid "Your new PC has been added."
 msgstr "کامپیوتر جدید شما اضافه گردید"
 
-#: ../xpoweredit.py:103
+#: ../xpoweredit.py:102
 msgid "get MAC of running PC"
 msgstr ""
